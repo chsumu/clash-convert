@@ -13,6 +13,7 @@ const enableScript = true;
 const customRules = [
     "DOMAIN-SUFFIX,linux.do,手动选择",
     "DOMAIN-SUFFIX,huggingface.co,AI",
+    "DOMAIN-KEYWORD,google,Google",
     "DOMAIN-KEYWORD,higress,DIRECT",
 ];
 
