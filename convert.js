@@ -98,7 +98,7 @@ function mrsProvider(name, behavior = "domain") {
         interval: 86400,
         behavior,
         url: `${RULE_BASE}/${dir}/${name}.mrs`,
-        path: `./ruleset/${name}.mrs`,
+        path: `./ruleset/${dir}_${name}.mrs`,
     };
 }
 
