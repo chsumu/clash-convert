@@ -421,7 +421,7 @@ function mergeDnsConfig(flags, upstreamDns) {
         "enhanced-mode": flags.fakeip ? "fake-ip" : "redir-host",
         "default-nameserver": ["223.5.5.5", "119.29.29.29"],
         nameserver: ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
-        fallback: ["https://dns.cloudflare.com/dns-query", "https://dns.sb/dns-query"],
+        fallback: ["https://dns.cloudflare.com/dns-query#节点选择", "https://dns.google/dns-query#节点选择"],
         ...(flags.fakeip ? { "fake-ip-filter": [...FAKE_IP_FILTER] } : {}),
     };
     if (!isPlainObject(upstreamDns)) return base;
